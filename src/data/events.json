@@ -307,5 +307,16 @@
     "location": "Chennai",
     "communityName": "Code On JVM Chennai",
     "communityLogo": "https://i.ibb.co/5xSndqPW/Code-On-Chennai-JVM.png"
+  },
+  {
+    "eventName": "Kubernetes Meetup - Chennai",
+    "eventDescription": "Join us for our next edition of Chennai meetup to learn about all things Kubernetes, how you can use DigitalOcean and Kubernetes to scale applications and more! Whether you're a seasoned developer or just starting, this is the perfect opportunity to learn, collaborate, and network with other developers in the city.",
+    "eventDate": "2025-05-31",
+    "eventTime": "10:00",
+    "eventVenue": "Contentstack India Pvt. Ltd., 5th Floor, WorkEZ, Helix.21, Guru Nanak College Rd, above West side, Indira Gandhi Nagar, Velachery, Chennai, Tamil Nadu 600042, India",
+    "eventLink": "https://lu.ma/9w3yvxrg",
+    "location": "Chennai",
+    "communityName": "Kubernetes Community Chennai",
+    "communityLogo": "https://i.ibb.co/DPVD4SBv/Digital-Ocean-Logo.png"
   }
 ]
