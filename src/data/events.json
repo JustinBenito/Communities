@@ -307,5 +307,16 @@
     "location": "Chennai",
     "communityName": "Code On JVM Chennai",
     "communityLogo": "https://i.ibb.co/5xSndqPW/Code-On-Chennai-JVM.png"
+  },
+  {
+    "eventName": "WWDC25 Watch Party | Swift Chennai",
+    "eventDescription": "Join Swift Chennai for a special night of community, kaapi, and code as we stream the WWDC25 keynote together.",
+    "eventDate": "2025-06-09",
+    "eventTime": "8:00 PM – 12:30 AM",
+    "eventVenue": "Kissflow (OrangeScape Technologies), No:5, Tower-B, 10th Floor, World Trade Center, 142, Rajiv Gandhi Salai, Perungudi, Chennai, Tamil Nadu 600096",
+    "eventLink": "https://lu.ma/9engu1qy?utm_source=tamilnadu_tech",
+    "location": "Chennai",
+    "communityName": "Swift Chennai",
+    "communityLogo": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=400,height=400/event-covers/ru/5ef8911a-11eb-4fb8-8dbf-a2c0c5a283d1.jpg"
   }
 ]
