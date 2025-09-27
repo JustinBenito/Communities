@@ -1,16 +1,5 @@
 [
   {
-    "eventName": "FOSS Meetup | September 2025",
-    "eventDescription": "FOSS Meetup - September 2025.",
-    "eventDate": "2025-09-27",
-    "eventTime": "02:00",
-    "eventVenue": "Dr. Mahalingam College of Engineering and Technology, Pollachi, Tamil Nadu 642003",
-    "eventLink": "https://fossunited.org/c/coimbatore/2025/sept",
-    "location": "Coimbatore",
-    "communityName": "FOSS United Coimbatore",
-    "communityLogo": "https://fossunited.org/files/Foss%20United%20Logo%20Black.svg"
-  },
-  {
     "eventName": "CTOtalk Annual Summit 2025",
     "eventDescription": "CTOtalk Annual Summit 2025 is happening on October 25 at ITC Grand Chola, Chennai. Join 1000+ CTOs, CDOs, VPs, and engineering leaders from India's top tech companies as they share real-world AI strategies, challenges, and innovations. Expect deep-dive tech sessions, unfiltered peer insights, and a gathering of leaders building the future. Early bird registration closing soon!",
     "eventDate": "2025-10-25",
@@ -32,27 +21,5 @@
     "communityName": "TechXConf",
     "communityLogo": "https://i.ibb.co/FkPD9QdN/techconf-logo.png",
     "paid": true
-  },
-  {
-    "eventName": "React India x Chennai React Meetup",
-    "eventDescription": "Chennai React is a community of React developers in Chennai. We meet every month to discuss the latest in React, share knowledge, and build connections.",
-    "eventDate": "2025-09-27",
-    "eventTime": "13:30",
-    "eventVenue": "Kanini software solutions, Elcot",
-    "eventLink": "https://luma.com/react-india-chennai-meetup-2025",
-    "location": "Chennai",
-    "communityName": "Chennai React",
-    "communityLogo": "https://avatars.githubusercontent.com/u/175532518"
-  },
-  {
-    "eventName": "FOSS United Chennai x NammaFlutter September Meetup",
-    "eventDescription": "FOSS United Chennai x NammaFlutter collab event. We have workshops on opensource contributions this month.",
-    "eventDate": "2025-09-27",
-    "eventTime": "9:30",
-    "eventVenue": "YuniQ, Tharamani",
-    "eventLink": "https://fossunited.org/c/chennai/2025/september",
-    "location": "Chennai",
-    "communityName": "FOSS United Chennai",
-    "communityLogo": "https://fossunited.org/files/Foss%20United%20Logo%20Black.svg"
   }
 ]
