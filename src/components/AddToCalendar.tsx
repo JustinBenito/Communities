@@ -29,9 +29,7 @@ const AddToCalendar: React.FC<AddToCalendarProps> = ({
     return updatedDate;
   };
 
-  const handleRedirect = (event: React.MouseEvent<HTMLButtonElement>): void => {
-    event.preventDefault();
-
+  const getCalendarUrl = (): string => {
     const startDate = new Date(eventDate);
     const inclusiveEndDate = eventEndDate ? new Date(eventEndDate) : startDate;
     const exclusiveEndDate = addDays(inclusiveEndDate, 1);
@@ -45,14 +43,20 @@ const AddToCalendar: React.FC<AddToCalendarProps> = ({
     });
 
     const baseUrl = 'https://calendar.google.com/calendar/render';
-    const url = `${baseUrl}?${params.toString()}`;
-    window.open(url, '_blank');
+    return `${baseUrl}?${params.toString()}`;
   };
 
+  const calendarUrl = getCalendarUrl();
+
   return (
-    <button onClick={handleRedirect} aria-label='Add event to Google Calendar'>
+    <a
+      href={calendarUrl}
+      target='_blank'
+      rel='noopener noreferrer'
+      aria-label='Add event to Google Calendar'
+    >
       <Image src={Add2Calendar} alt='CalendarIcon' style={{ width: '20px', height: '20px' }} />
-    </button>
+    </a>
   );
 };
 

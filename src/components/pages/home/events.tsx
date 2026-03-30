@@ -308,36 +308,42 @@ const Events = () => {
             >
               {title}
             </h3>
-
-            <div className='flex-row items-center text-sm text-gray-600'>
-              <div className='flex flex-wrap items-center gap-2'>
-                <span className={`rounded bg-green-100 px-2 py-0.5 text-xs text-green-800`}>
-                  {location}
-                </span>
-                <span className={`rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-800`}>
-                  {formattedDate}
-                </span>
-                <span className={`rounded bg-yellow-100 px-2 py-0.5 text-xs text-yellow-800`}>
-                  {formattedTime}
-                </span>
-                <span className='shrink-0'>
-                  <AddToCalendar
-                    eventTitle={title}
-                    eventVenue={venue}
-                    eventDate={date}
-                    eventEndDate={endDate}
-                    eventLink={link}
-                  />
-                </span>
-              </div>
-              <div className='mt-auto flex flex-grow flex-col justify-end'>
-                <span className='mt-4 flex items-start gap-1 text-xs'>
-                  <MapPin size={16} className='min-w-[16px]' />{' '}
-                  <span className='break-words'>{validateAndFormatVenue(venue)}</span>{' '}
-                </span>
-              </div>
-            </div>
           </a>
+
+          <div className='flex-row items-center text-sm text-gray-600'>
+            <div className='flex flex-wrap items-center gap-2'>
+              <span className={`rounded bg-green-100 px-2 py-0.5 text-xs text-green-800`}>
+                {location}
+              </span>
+              <span className={`rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-800`}>
+                {formattedDate}
+              </span>
+              <span className={`rounded bg-yellow-100 px-2 py-0.5 text-xs text-yellow-800`}>
+                {formattedTime}
+              </span>
+              <span className='shrink-0'>
+                <AddToCalendar
+                  eventTitle={title}
+                  eventVenue={venue}
+                  eventDate={date}
+                  eventEndDate={endDate}
+                  eventLink={link}
+                />
+              </span>
+            </div>
+            <a
+              href={link}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='mt-auto flex flex-grow flex-col justify-end'
+              aria-label={`View details for ${title} event venue`}
+            >
+              <span className='mt-4 flex items-start gap-1 text-xs'>
+                <MapPin size={16} className='min-w-[16px]' />{' '}
+                <span className='break-words'>{validateAndFormatVenue(venue)}</span>{' '}
+              </span>
+            </a>
+          </div>
         </div>
       </div>
     );
