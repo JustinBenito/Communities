@@ -489,11 +489,11 @@
     }
   },
   {
-    "eventName": "ChennaiFOSS 3.0",
+    "eventName": "ChennaiFOSS 2026",
     "eventDescription": "Annual city FOSS conference",
     "eventDate": "2026-04-18",
     "eventTime": "09:00",
-    "eventVenue": "IIT Madras Research Park, Chennai- 600113",
+    "eventVenue": "IC&SR Auditorium, IITM Campus",
     "eventLink": "https://fossunited.org/c/chennai/2026",
     "location": "Chennai",
     "communityName": "FOSS United Chennai",
