@@ -499,8 +499,8 @@
     "communityName": "FOSS United Chennai",
     "communityLogo": "https://podu.pics/zJMSz8RE_Q",
     "alert": {
-        "message": "Early bird ends soon! Register now to secure your spot.",
-        "type": "general"
+      "message": "Early bird ends soon! Register now to secure your spot.",
+      "type": "general"
     }
   }
 ]
