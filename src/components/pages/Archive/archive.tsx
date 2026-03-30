@@ -6,15 +6,16 @@ import EmptyEventCard from '../../no-events-card';
 import Image from 'next/image';
 import AddToCalendar from '@/components/AddToCalendar';
 import LoadingAnimation from '@/components/LoadingAnimation';
-import { div } from 'framer-motion/client';
 
 type Event = {
   communityName: string;
   communityLogo: string;
   eventName: string;
   eventDate: string;
+  eventEndDate?: string;
   eventVenue: string;
   eventTime: string;
+  eventEndTime?: string;
   eventLink: string;
   location: string;
   alert?: {
@@ -27,9 +28,11 @@ type EventCardProps = {
   communityName: string;
   title: string;
   date: string;
+  endDate?: string;
   location: string;
   venue: string;
   time: string;
+  endTime?: string;
   link: string;
   logo?: string;
   isMonthly: boolean;
@@ -92,7 +95,8 @@ const Archive = () => {
   const uniqueCommunities = Array.from(new Set(events.map((event) => event.communityName))).sort();
 
   const monthlyEvents = sortedEvents.filter((event) => {
-    const eventDate = new Date(event.eventDate);
+    const eventDate = new Date(event.eventEndDate ?? event.eventDate);
+    eventDate.setHours(23, 59, 59, 999);
 
     return eventDate <= today;
   });
@@ -125,9 +129,11 @@ const Archive = () => {
     communityName,
     title,
     date,
+    endDate,
     location,
     venue,
     time,
+    endTime,
     link,
     logo,
     isMonthly,
@@ -175,6 +181,9 @@ const Archive = () => {
     const handleMouseLeave = () => {
       setMousePosition(null);
     };
+
+    const formattedDate = endDate && endDate !== date ? `${date} to ${endDate}` : date;
+    const formattedTime = endTime && endTime !== time ? `${time} to ${endTime}` : time;
 
     return (
       <div
@@ -289,15 +298,16 @@ const Archive = () => {
                   {location}
                 </span>
                 <span className={`rounded bg-blue-100 px-2 py-0.5 text-xs text-blue-800`}>
-                  {date}
+                  {formattedDate}
                 </span>
                 <span className={`rounded bg-yellow-100 px-2 py-0.5 text-xs text-yellow-800`}>
-                  {time}
+                  {formattedTime}
                 </span>
                 <AddToCalendar
                   eventTitle={title}
                   eventVenue={venue}
                   eventDate={date}
+                  eventEndDate={endDate}
                   eventLink={link}
                 />
               </div>
@@ -387,9 +397,11 @@ const Archive = () => {
                 location={event.location}
                 title={event.eventName}
                 date={event.eventDate}
+                endDate={event.eventEndDate}
                 venue={event.eventVenue}
                 link={event.eventLink}
                 time={event.eventTime}
+                endTime={event.eventEndTime}
                 logo={event.communityLogo}
                 isMonthly={true}
                 alert={event.alert}
