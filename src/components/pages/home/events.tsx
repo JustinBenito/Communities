@@ -310,7 +310,7 @@ const Events = () => {
             </h3>
 
             <div className='flex-row items-center text-sm text-gray-600'>
-              <div className='flex items-center space-x-2'>
+              <div className='flex flex-wrap items-center gap-2'>
                 <span className={`rounded bg-green-100 px-2 py-0.5 text-xs text-green-800`}>
                   {location}
                 </span>
@@ -320,13 +320,15 @@ const Events = () => {
                 <span className={`rounded bg-yellow-100 px-2 py-0.5 text-xs text-yellow-800`}>
                   {formattedTime}
                 </span>
-                <AddToCalendar
-                  eventTitle={title}
-                  eventVenue={venue}
-                  eventDate={date}
-                  eventEndDate={endDate}
-                  eventLink={link}
-                />
+                <span className='shrink-0'>
+                  <AddToCalendar
+                    eventTitle={title}
+                    eventVenue={venue}
+                    eventDate={date}
+                    eventEndDate={endDate}
+                    eventLink={link}
+                  />
+                </span>
               </div>
               <div className='mt-auto flex flex-grow flex-col justify-end'>
                 <span className='mt-4 flex items-start gap-1 text-xs'>
